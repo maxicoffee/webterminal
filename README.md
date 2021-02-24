@@ -1,26 +1,12 @@
-# Webterminal bastion server (瓦特堡垒机)
-[![EN doc](https://img.shields.io/badge/document-English-blue.svg)](README.md)
-[![CN doc](https://img.shields.io/badge/文档-中文版-blue.svg)](./doc/README-zh_cn.md)
-[![CNT doc](https://img.shields.io/badge/文檔-繁體版-blue.svg)](./doc/README-zht.md)
+# mcterminal bastion server
 
 
-Webterminal implemented by django.
+ Fork of Webterminal implemented by django.
 This project focus on DevOps and Continuous Delivery.
 For now it support almost 90% remote management protocol such as vnc, ssh,rdp,telnet,sftp... It support a possiblity to monitor and recorded user action when user use this project to manage their server!You can also replay the user action such as like a video.
 Hope you enjoy it.
 
-## Next Release: *To be defined, project will migrate to django 3*
-## This project is still under the development.
-
-# useage
-[![Usage Video](https://i.ytimg.com/vi/-HwhB21v8L8/1.jpg?time=1527217648531)](https://www.youtube.com/watch?v=-HwhB21v8L8)
-
-
-[How to use this project](./doc/usage_en.md)
-
-
-# Installiation guide
-[installiation guide](./doc/install_en.md)
+Fork is for cleaning codebase.
 
 
 # Run with docker
