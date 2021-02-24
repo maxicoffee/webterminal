@@ -7,9 +7,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'plugins/sweetalert/sweetalert2.min.css' %}">
     <style>
         body {
-            padding:0;  /*去除内边距*/
-            border:0;   /*去除边框*/
-            margin:0;   /*去除外边距*/
+            padding:0;  
+            border:0;   
+            margin:0;   
         }
     </style>
 </head>
@@ -22,24 +22,6 @@
 <script type="text/javascript" src="{% static 'plugins/sweetalert/sweetalert2.all.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'plugins/mousetrap/mousetrap.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'plugins/clipboard.js/clipboard.min.js' %}"></script>
-
-
-<!-- Matomo -->
-<script type="text/javascript">
-  var _paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//193.112.194.114:8002/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
-
  
 <!-- Display -->
 <div id="display">
