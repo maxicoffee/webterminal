@@ -69,13 +69,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="https://www.maxicoffee.com/charte/elements/logo/MaxiCoffee_Monogramme-seul-RVB.png" class="user-image" alt="User Image">
+              <img src="{% static "img/logomc.jpg" %}" class="user-image" alt="User Image">
               <span class="hidden-xs">{% if request.user %}{{request.user}}{% else %}{{user}}{% endif %}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="https://www.maxicoffee.com/charte/elements/logo/MaxiCoffee_Monogramme-seul-RVB.png" class="img-circle" alt="User Image">
+                <img src="{% static "img/logomc.jpg" %}" class="img-circle" alt="User Image">
                 <p>
                   {% if request.user %}{{request.user}}{% else %}{{user}}{% endif %}
                 </p>
