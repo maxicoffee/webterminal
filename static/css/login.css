@@ -402,7 +402,7 @@ table {
 }
 
 html {
-  background: #000;
+  background: #828282;
   background-size: cover;
   font-size: 10px;
   height: 100%;
@@ -414,7 +414,7 @@ html {
 
 /* =========================================
 Stark Industries Logo
-========================================= */
+========================================= 
 #logo {
   animation: logo-entry 4s ease-in;
   width: 500px;
@@ -457,7 +457,7 @@ h1:after {
   transform: rotate(-47deg);
   width: 0;
 }
-
+*/
 /* =========================================
 Log in form
 ========================================= */
