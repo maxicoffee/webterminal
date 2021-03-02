@@ -563,9 +563,9 @@ Spinner
 ========================================= */
 #circle1 {
   animation: circle1 4s linear infinite, circle-entry 6s ease-in-out;
-  background: #74ebe6;
+  background: #bf935c;
   border-radius: 100%;
-  border: 10px solid #74ebe6;
+  border: 10px solid #003d44;
   box-shadow: 0 0 0 2px black, 0 0 0 6px #74ebe6;
   height: 500px;
   width: 500px;
