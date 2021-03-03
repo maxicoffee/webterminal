@@ -1,16 +1,14 @@
-# mcterminal bastion server
+openBastion
 
-
- Fork of Webterminal implemented by django.
+Fronted to Apache Guacamole
+Current Guacamole version: 1.0.0
  
-This project focus on DevOps and Continuous Delivery.
+Protocol:
 
 - SSH
 - RDP
 - VNC
-
-Fork is for cleaning codebase.
-
+- File manager
 
 # Run with docker
 
