@@ -1,8 +1,8 @@
 version: '3'
 services:
-  webterminal:
-    image: webterminal/webterminal:latest
-    container_name: webterminal
+  openbastion:
+    image: openbastion:latest
+    container_name: openbastion
     ports:
       - "80:80"
       - "2100:2100"

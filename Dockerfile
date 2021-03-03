@@ -15,10 +15,10 @@ RUN apt-get install gcc-snapshot -y
 RUN apt-get install gcc-6 g++-6 -y
 RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 60 --slave /usr/bin/g++ g++ /usr/bin/g++-6
 WORKDIR /tmp
-#RUN wget http://sourceforge.net/projects/guacamole/files/current/source/guacamole-server-0.9.14.tar.gz
-COPY guacamole-server-0.9.14.tar.gz /tmp
-RUN tar -xvpf guacamole-server-0.9.14.tar.gz
-WORKDIR /tmp/guacamole-server-0.9.14
+RUN wget https://archive.apache.org/dist/guacamole/1.0.0/source/guacamole-server-1.0.0.tar.gz
+#COPY guacamole-server-1.0.0.tar.gz /tmp
+RUN tar -xvpf guacamole-server-1.0.0.tar.gz
+WORKDIR /tmp/guacamole-server-1.0.0
 RUN ./configure --with-init-dir=/etc/init.d
 RUN make && make install
 RUN rm -rf /tmp/guacamole-server*
@@ -28,9 +28,17 @@ RUN ln -s /usr/local/lib/freerdp/guacdr-client.so /usr/lib/x86_64-linux-gnu/free
 RUN ln -s /usr/local/lib/freerdp/guacsnd-client.so /usr/lib/x86_64-linux-gnu/freerdp/guacsnd-client.so 
 RUN mkdir -p /var/log/web
 WORKDIR /opt
-RUN git clone https://github.com/maxicoffee/webterminal.git
+#RUN git clone https://github.com/maxicoffee/webterminal.git
+COPY . /opt/webterminal/
+RUN ls -lah
+#COPY requirements.txt /opt/webterminal
+#COPY manage.py /opt/webterminal
+#COPY createsuperuser.py /opt/webterminal
+RUN touch /opt/webterminal/__init__.py
+
 WORKDIR /opt/webterminal
 RUN mkdir -p /opt/webterminal/media/admin/Download
+RUN mkdir -p /opt/webterminal/database
 RUN pip3 install -r requirements.txt
 RUN python3 manage.py makemigrations
 RUN python3 manage.py migrate
@@ -39,9 +47,9 @@ ADD nginx.conf /etc/nginx/nginx.conf
 ADD supervisord.conf /etc/supervisor/supervisord.conf
 ADD docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh
-COPY settings.py /opt/webterminal/webterminal
-RUN mkdir /etc/nginx/certificate
-COPY ssl/nginx-certificate.crt /etc/nginx/certificate
-COPY ssl/nginx.key /etc/nginx/certificate
+#COPY settings.py /opt/webterminal/webterminal
+#RUN mkdir /etc/nginx/certificate
+#COPY ssl/nginx-certificate.crt /etc/nginx/certificate
+#COPY ssl/nginx.key /etc/nginx/certificate
 EXPOSE 80 2100
 CMD ["/docker-entrypoint.sh", "start"]
