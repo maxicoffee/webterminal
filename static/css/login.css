@@ -426,7 +426,7 @@ Stark Industries Logo
 h1 {
   animation: text-glow 2s ease-out infinite alternate;
   font-family: 'Ubuntu', sans-serif;
-  color: #bf935c;
+  color: #dfdfdf;
   font-size: 48px;
   font-size: 4.8rem;
   font-weight: bold;
@@ -437,7 +437,7 @@ h1 {
 h1:before {
   animation: before-glow 2s ease-out infinite alternate;
   border-left: 535px solid transparent;
-  border-bottom: 10px solid #bf935c;
+  border-bottom: 10px solid #dfdfdf;
   content: ' ';
   height: 0;
   position: absolute;
@@ -448,7 +448,7 @@ h1:before {
 h1:after {
   animation: after-glow 2s ease-out infinite alternate;
   border-left: 100px solid transparent;
-  border-top: 16px solid #bf935c;
+  border-top: 16px solid #dfdfdf;
   content: ' ';
   height: 0;
   position: absolute;
@@ -469,9 +469,9 @@ Log in form
 .stark-login form {
   animation: form-entry 3s ease-in-out;
   background: #111;
-  background: linear-gradient(#bf935c, #bf935c);
-  border: 6px solid #bf935c;
-  box-shadow: 0 0 15px #bf935c;
+  background: linear-gradient(#dfdfdf, #dfdfdf);
+  border: 6px solid #dfdfdf;
+  box-shadow: 0 0 15px #dfdfdf;
   border-radius: 5px;
   display: inline-block;
   height: 235px;
@@ -486,8 +486,8 @@ a {
   font-size:14px;
 }
 .stark-login form:hover {
-  border: 6px solid #bf935c;
-  box-shadow: 0 0 25px #bf935c;
+  border: 6px solid #dfdfdf;
+  box-shadow: 0 0 25px #dfdfdf;
   transition: 1s all;
 }
 .stark-login input {
@@ -563,10 +563,10 @@ Spinner
 ========================================= */
 #circle1 {
   animation: circle1 4s linear infinite, circle-entry 6s ease-in-out;
-  background: #bf935c;
+  background: #dfdfdf;
   border-radius: 100%;
   border: 10px solid #003d44;
-  box-shadow: 0 0 0 2px black, 0 0 0 6px #bf935c;
+  box-shadow: 0 0 0 2px black, 0 0 0 6px #dfdfdf;
   height: 500px;
   width: 500px;
   position: absolute;
@@ -581,7 +581,7 @@ Spinner
 #inner-cirlce1 {
   background: #000;
   border-radius: 100%;
-  border: 36px solid #bf935c;
+  border: 36px solid #dfdfdf;
   height: 460px;
   width: 460px;
   margin: 10px;
@@ -617,7 +617,7 @@ Hexagon Mesh
   letter-spacing: -0.2em;
   line-height: 0.7;
   position: absolute;
-  text-shadow: 0 0 6px #bf935c;
+  text-shadow: 0 0 6px #dfdfdf;
   top: 1px;
   width: 100%;
   /*transform: perspective(60px)  scale(2.4);*/
