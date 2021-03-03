@@ -426,7 +426,7 @@ Stark Industries Logo
 h1 {
   animation: text-glow 2s ease-out infinite alternate;
   font-family: 'Ubuntu', sans-serif;
-  color: #74ebe6;
+  color: #bf935c;
   font-size: 48px;
   font-size: 4.8rem;
   font-weight: bold;
@@ -437,7 +437,7 @@ h1 {
 h1:before {
   animation: before-glow 2s ease-out infinite alternate;
   border-left: 535px solid transparent;
-  border-bottom: 10px solid #74ebe6;
+  border-bottom: 10px solid #bf935c;
   content: ' ';
   height: 0;
   position: absolute;
@@ -448,7 +448,7 @@ h1:before {
 h1:after {
   animation: after-glow 2s ease-out infinite alternate;
   border-left: 100px solid transparent;
-  border-top: 16px solid #74ebe6;
+  border-top: 16px solid #bf935c;
   content: ' ';
   height: 0;
   position: absolute;
@@ -469,9 +469,9 @@ Log in form
 .stark-login form {
   animation: form-entry 3s ease-in-out;
   background: #111;
-  background: linear-gradient(#74ebe6, #74ebe6);
-  border: 6px solid #74ebe6;
-  box-shadow: 0 0 15px #74ebe6;
+  background: linear-gradient(#bf935c, #bf935c);
+  border: 6px solid #bf935c;
+  box-shadow: 0 0 15px #bf935c;
   border-radius: 5px;
   display: inline-block;
   height: 235px;
@@ -486,8 +486,8 @@ a {
   font-size:14px;
 }
 .stark-login form:hover {
-  border: 6px solid #74ebe6;
-  box-shadow: 0 0 25px #74ebe6;
+  border: 6px solid #bf935c;
+  box-shadow: 0 0 25px #bf935c;
   transition: 1s all;
 }
 .stark-login input {
@@ -566,7 +566,7 @@ Spinner
   background: #bf935c;
   border-radius: 100%;
   border: 10px solid #003d44;
-  box-shadow: 0 0 0 2px black, 0 0 0 6px #74ebe6;
+  box-shadow: 0 0 0 2px black, 0 0 0 6px #bf935c;
   height: 500px;
   width: 500px;
   position: absolute;
@@ -581,7 +581,7 @@ Spinner
 #inner-cirlce1 {
   background: #000;
   border-radius: 100%;
-  border: 36px solid #74ebe6;
+  border: 36px solid #bf935c;
   height: 460px;
   width: 460px;
   margin: 10px;
@@ -617,7 +617,7 @@ Hexagon Mesh
   letter-spacing: -0.2em;
   line-height: 0.7;
   position: absolute;
-  text-shadow: 0 0 6px #74ebe6;
+  text-shadow: 0 0 6px #bf935c;
   top: 1px;
   width: 100%;
   /*transform: perspective(60px)  scale(2.4);*/
