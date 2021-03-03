@@ -511,7 +511,7 @@ a {
   outline: none;
 }
 .stark-login input:invalid {
-  border: 2px solid  #00fffc;
+  border: 2px solid  #cccccc;
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.2), inset 0 0 5px rgba(255, 0, 0, 0.1), 0 2px 0 black;
 }
 .stark-login button {
@@ -541,7 +541,7 @@ a {
 .stark-login button:focus {
   background: #0C6125;
   background: linear-gradient(#393939, #292929);
-  color: #00fffc;
+  color: #cccccc;
   outline: none;
   transition: 1s all;
 }
@@ -700,7 +700,7 @@ Animation Keyframes
   }
 
   100% {
-    border-color: #00fffc;
+    border-color: #cccccc;
     box-shadow: 0 0 20px rgba(0, 255, 253, 0.6), inset 0 0 10px rgba(0, 255, 253, 0.4), 0 2px 0 black;
   }
 }
@@ -712,7 +712,7 @@ Animation Keyframes
   }
 
   100% {
-    color: #00fffc;
+    color: #cccccc;
     text-shadow: 0 0 20px rgba(0, 255, 253, 0.6), 0 0 10px rgba(0, 255, 253, 0.4), 0 2px 0 black;
   }
 }
@@ -723,7 +723,7 @@ Animation Keyframes
   }
 
   100% {
-    border-bottom: 10px solid #00fffc;
+    border-bottom: 10px solid #cccccc;
   }
 }
 
@@ -733,7 +733,7 @@ Animation Keyframes
   }
 
   100% {
-    border-top: 16px solid #00fffc;
+    border-top: 16px solid #cccccc;
   }
 }
 
