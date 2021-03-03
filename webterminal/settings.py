@@ -277,9 +277,7 @@ en_formats.DATETIME_FORMAT = 'Y-m-d H:i:s'
 en_formats.DATETIME_INPUT_FORMATS = 'Y-m-d H:i:s'
 
 LANGUAGES = [
-    ('zh-hans', _('Simple Chinese')),
     ('en', _('English')),
-    ('zh-hant', _('traditional Chinese')),
 ]
 
 CHANNELS_WS_PROTOCOLS = ["guacamole"]
