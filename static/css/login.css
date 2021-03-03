@@ -471,7 +471,6 @@ Log in form
   background: #111;
   background: linear-gradient(#dfdfdf, #dfdfdf);
   border: 6px solid #dfdfdf;
-  box-shadow: 0 0 15px #dfdfdf;
   border-radius: 5px;
   display: inline-block;
   height: 235px;
@@ -496,7 +495,7 @@ a {
   border: 1px solid #444;
   border-radius: 5px;
   box-shadow: 0 2px 0 #000;
-  color: #888;
+  color: #fff;
   display: block;
   font-family: 'Cabin', helvetica, arial, sans-serif;
   font-size: 13px;
@@ -508,12 +507,7 @@ a {
   width: 400px;
 }
 .stark-login input:focus {
-  animation: box-glow 1s ease-out infinite alternate;
-  background: #0B4252;
-  background: linear-gradient(#333933, #222922);
-  border-color: #00fffc;
-  box-shadow: 0 0 5px rgba(0, 255, 253, 0.2), inset 0 0 5px rgba(0, 255, 253, 0.1), 0 2px 0 black;
-  color: #efe;
+
   outline: none;
 }
 .stark-login input:invalid {
